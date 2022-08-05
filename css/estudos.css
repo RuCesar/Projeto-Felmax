@@ -1,0 +1,57 @@
+body {
+    background: black;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    }
+
+.container__logo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+.Logotipo{
+    display: flex;
+    height: 35%;
+    margin: 20px auto;
+    padding: 0 auto;
+    position: static;
+    width: 35%;
+}
+
+.slogan__logo {
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+.container__links{
+    align-items: center;
+    display: flex;
+    height: 400px;
+    width: 100%;
+    
+}
+.navegação{
+    display: flex;
+    width: 100%;
+    
+}
+.links__nav{
+    display: flex;
+    font-size: 70px;
+    justify-content: space-around; 
+    padding: 0 0 0 5%;
+    width: 100%;
+}
+
+.navegação a{
+    color: white;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+nav a:hover{color: red;}

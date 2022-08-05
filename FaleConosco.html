@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-widht, initial-scale=1.0">
+        
+        
+        <link rel="stylesheet" href="..\Projeto-Felmax\css\reset.css">
+        <link rel="stylesheet" href="..\Projeto-Felmax\css\FaleConosco.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+            
+        <title>Fale Conosco</title>
+    </head>
+
+    <body>
+        <header class="Cabeçalho">
+            <div class="Centralização">
+                <img class="Logo" src="..\Projeto-Felmax\Assets\felmax.png" alt="Logotipo Felmax Automotivos">
+
+                <nav class="menu">
+                    <ul class="menu__lista">
+                        <li class="menu__item"><a class="menu__link" href="index.html"> Home</a></li>
+                        <li class="menu__item"><a class="menu__link" href="Localização.html">Localização</a></li>
+                        <li class="menu__item"><a class="menu__link" href="Serviços.html">Serviços</a></li>
+                    </ul>    
+                </nav>
+            </div>   
+        </header>
+
+        <main class="conteudo">
+            <h1 class="titulos">Fale conosco e tire suas dúvidas!</h1>
+
+
+            <div class="container__formulario">
+                <form class="formulario">
+
+                    <fieldset>
+                        <label class="label__padrao"> Nome Completo:<input type="text" class="input__padrao" required placeholder="Digite seu nome completo"></label>
+                        <label class="label__padrao">Email:<input type="email" class="input__padrao" required placeholder="Exemplo:email@email.com"></label> 
+                        <label class="label__padrao">Telefone:<input type="tel" class="input__padrao" required placeholder="Exemplo:(11) 12345-6789"></label> 
+                    </fieldset> 
+
+                    <fieldset>
+                        <label class="label__padrao">Deixe sua mensagem: <textarea class="textarea" placeholder="Digite aqui sua mensagem para a Felmax"></textarea></label>
+                    </fieldset> 
+                    
+                    <fieldset class="radio">
+                        <legend>Prefere qual forma de contato?</legend>
+                            <div class="container__radio">
+                                <label class="label__radio"><input type="radio" name="contato" >Telefone</label>
+                                <label class="label__radio"><input type="radio" name="contato" >Email</label>
+                                <label class="label__radio"><input type="radio" name="contato"  checked>Whatsapp</label>
+                        </div>
+                     </fieldset>
+
+                    <fieldset>
+                        <legend>Qual melhor horário para o contato?</legend>
+                         <select class="selecao__horario">
+                            <option class="opcao__horario" value="horario" >08:00 ás 10:00</option>
+                            <option class="opcao__horario" value="horario" >10:00 ás 12:00</option>
+                            <option class="opcao__horario" value="horario" >12:00 ás 14:00</option>
+                            <option class="opcao__horario" value="horario" >14:00 ás 16:00</option>
+                         </select>
+                    </fieldset>
+
+                    <fieldset class="divisão">
+                         <input type="submit" class="botao__enviar">
+                    </fieldset>
+
+                </form>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="rodape">
+                <img class="logo__rodape" src="..\Projeto-Felmax\Assets\felmax.png" alt="Logo Felmax Automotivos">
+                <P class="copyright__rodape"> &copy; Todos os direitos reservados</P>
+                
+                
+            </div>
+        </footer>
+    </body>
+</html>
