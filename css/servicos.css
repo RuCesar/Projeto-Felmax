@@ -6,7 +6,7 @@ body{
 
 header {background: black;}
 
-.Centralização {
+.centralizacao {
     align-items: center;
     display: flex;
     justify-content: space-between;

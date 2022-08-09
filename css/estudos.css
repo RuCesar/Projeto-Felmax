@@ -35,7 +35,7 @@ body {
     width: 100%;
     
 }
-.navegação{
+.navegacao{
     display: flex;
     width: 100%;
     
@@ -48,7 +48,7 @@ body {
     width: 100%;
 }
 
-.navegação a{
+.navegacao a{
     color: white;
     font-weight:bold;
     text-decoration: none;
