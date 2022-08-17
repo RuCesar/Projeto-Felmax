@@ -1,137 +1,89 @@
-/*.........................HEADER........................................*/
-body{
-	font-family: 'Roboto', sans-serif;
-   font-family: 'Source Sans Pro', sans-serif;
+@import url(header.css);
+@import url(footer.css);
+
+	.Corpo{
+		background: var(--gradiente-corpo);
 	}
 
-header {background: black;}
-
-.centralizacao {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    position: relative;
-    width: 1300px;
-   }
-
-.Logo {
-    height: 30%;
-    margin: 30px;
-    width: 30%;
-   }
-
-.menu {
-    position: absolute;
-    right: 0%;
-    top:50%;
-   }
-
-.menu__lista {
-    display: flex;
+	.div__servicos{ 
+		display: flex;
+		padding: 5% 0 ;
+		width: 100%;
 	}
 
-.menu__item {
-    color: white; 
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 35px;
-    text-transform: uppercase;
-   }
-
-.menu__item :hover {
-    color: red;
-    font-size: 35px;
-   }
-
-.menu__link {
-    color: inherit;
-    text-decoration:none;
-   }
-
-/*...............................MAIN....................................*/
-
-
-.Corpo{
-	background: linear-gradient(white,grey);
-	height: 600px;
+	.lista__servicos {
+		align-items: center;
+		display: flex;
+		justify-content: center;
 	}
 
-.div__servicos{ 
-	position: relative;
-	margin: 0 auto;
-	padding: 3%;
-	width: 1300px;
+	.card__servicos{
+		align-items: center;
+		background-color: white;
+		border: 2px grey solid;
+		border-radius: 1em;
+		display: flex;
+		flex-flow: wrap column;
+		height: 100%;
+		margin: auto 2%;
+		width: 100%;
 	}
 
-.lista__servicos {
-	display: flex;
-	vertical-align: top;
-	
+	.lista__servicos li {
+		height: 100%;
+		width: 90%;
+	}
 
+	.lista__servicos h2{
+		display: flex;
+		font-size: 35px;
+		font-weight: bold;
+		opacity: 0.5;
+		padding: 5%;	
+		text-transform: uppercase;
+	}
+
+	.lista__servicos h2:hover{
+		color:black;
+		font-size: 2.5em;
+		opacity: 100%;
+	}
+
+	.lista__servicos img{
+		display: flex;
+		height: 35%;
+		margin: 15% auto;
+		width: 35%;
+	}
+
+	.item__servicos{
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content:flex-start;
+	}
+
+	.item__servicos img:hover{color: red;}
+
+	.texto__servicos{
+		color: black;
+		font-size: var(--descricoes);
+		margin: 0;
+		text-align:center;
+	}
+
+	.texto__servicos:hover{
+		font-weight: bold;
+	}
+
+@media (max-width: 768px) {
+	.card__servicos{
+		margin: 5% auto;
+		width: 70%;
+	}
+
+	.lista__servicos {
+		display: flex;
+		flex-direction: column;
+	}
 }
-
-.lista__servicos li {
-	border-color: black;
-	height: 50%;
-	padding: 0 20px;
-	width: 30%;
-	}
-
-.lista__servicos h2{
-	font-size: 35px;
-	font-weight: bold;
-	opacity: 0.5;
-	text-align: center;
-	text-transform: uppercase;
-	}
-
-.lista__servicos h2:hover{
-	color:black;
-	font-size: 45px;
-	opacity: 100%;
-	}
-
-.lista__servicos img{
-	display: flex;
-	height: 150px;
-	margin: 20% auto;
-	width: 150px;
-	}
-
-.item__servicos img:hover{color: red;}
-
-.texto__servicos{
-	color: black;
-	font-size: 30px;
-	text-align: left;
-	}
-
-.texto__servicos:hover{
-	font-weight: bold;
-	
-}
-
-
-/*....................................FOOTER...............................*/
-
-.rodape {
-	align-items: center;
-	background: black;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-   }
-
-.logo__rodape {
-	height: 10%;
-	width: 10%;
-    }
-
-.copyright__rodape {
-    color: white;
-    margin-bottom: 2%;
-    }
-
-
-/*..........................................
